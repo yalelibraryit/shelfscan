@@ -9,7 +9,7 @@ First, clone the three repos (shelfscan, accservices, accservices-web)
 2. Clone yalelibrary/accservices
 3. Clone yalelibrary/accservices-web
 
-Import all three projects into IntelliJ IDEA (or your favorite IDE). 
+Import all three projects into IntelliJ IDEA (or your favorite IDE). The project is set up as Maven multi-module project.
 
 Make sure that all the standard Java dependecies are installed (JDK, Maven, Microsoft JDBC driver). Install the JDBC driver through Maven.
 
