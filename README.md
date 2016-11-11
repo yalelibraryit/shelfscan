@@ -25,3 +25,11 @@ Go to localhost:8080/shelfscan
 Adjust web.xml as necessary. Set the datasource in context.xml for blues (SqlServer) and Oracle Voyager.
 
 The current application (running on deleon) is IP restricted. 
+
+Make sure that you grep for IPs in the directory and change all the IPs to the server where you are running the application, otherwise the application will overwrite data in the production database.
+
+# Interface
+
+A test version can be turned on the MacMini server, and it can be found here:
+
+agile dot library.yale.edu:8080/shelfscan
