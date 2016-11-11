@@ -28,6 +28,11 @@ The current application (running on deleon) is IP restricted.
 
 Make sure that you grep for IPs in the directory and change all the IPs to the server where you are running the application, otherwise the application will overwrite data in the production database.
 
+# Authentication
+
+Most pages are CAS restricted (in addition to IP restricted). There is no particular reason for that, but it can help enforce authorization for future purposes. Currently, the application only supports CAS authentication (there is no built in login mechanism). 
+The application data is just shelving reports, so it is not sensitive.
+
 # Interface
 
 A test version can be turned on the MacMini server, and it can be found here:
