@@ -9,34 +9,38 @@ First, clone the three repos (shelfscan, accservices, accservices-web)
 2. Clone yalelibrary/accservices
 3. Clone yalelibrary/accservices-web
 
-Import all three projects into IntelliJ Idea (or your favorite IDE). Make sure all the standard Java dependecies are installed (JDK, Maven, Microsoft JDBC driver).
+Import all three projects into IntelliJ IDEA (or your favorite IDE). 
 
-After installing the stack, run these steps:
+Make sure that all the standard Java dependecies are installed (JDK, Maven, Microsoft JDBC driver). Install the JDBC driver through Maven.
+
+After installing the Java stack, build the Maven project:
 
 ```
 cd shelfscan
 mvn clean install -P prod
 ```
 
-Copy the war file in accservices-web/target/ to your Tomcat directory. 
+Copy the resulting war file in accservices-web/target/ to your Tomcat directory (assuming you are installing it to Tomcat). 
 
-Go to localhost:8080/shelfscan
+Browse to localhost:8080/shelfscan
 
 # Configuration
 
-Adjust web.xml as necessary. Set the datasource in context.xml for blues (SqlServer) and Oracle Voyager.
+You may need to change the path to the log file directory as well. 
 
-The current application (running on deleon) is IP restricted. 
+Set the datasource in context.xml for blues (SqlServer) and Oracle Voyager.
 
-Make sure that you grep for IPs in the directory and change all the IPs to the server where you are running the application, otherwise the application will overwrite data in the production database.
+Note that the current application (running on deleon) is IP restricted. 
+
+Adjust the IP in web.xml as necessary. Make sure that you grep for IPs in the directory and change all the IPs to the server where you are running the application, otherwise the application will overwrite the data in the production database.
 
 # Authentication
 
 Most pages are CAS restricted (in addition to IP restricted). There is no particular reason for that, but it can help enforce authorization for future purposes. Currently, the application only supports CAS authentication (there is no built in login mechanism). 
-The application data is just shelving reports, so it is not sensitive.
+The application data comprises of just book scanning (inventory) reports, so it is not sensitive.
 
 # Interface
 
-A test version can be turned on the MacMini server, and it can be found here:
+A test version can be turned on the MacMini server in 607, and it can accessed here:
 
 agile dot library.yale.edu:8080/shelfscan
