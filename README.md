@@ -1,4 +1,4 @@
-shelfscan
+Shelfscan
 =========
 
 # Installation Steps
