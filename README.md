@@ -7,9 +7,9 @@ Clone this repo.
 Clone yalelibrary/accservices
 Clone yalelibrary/accservices-web
 
-Import all three projects into IntelliJ Idea (or your favorite IDE). Make sure all the standard Java dependecies are installed (JDK, Maven).
+Import all three projects into IntelliJ Idea (or your favorite IDE). Make sure all the standard Java dependecies are installed (JDK, Maven, Microsoft JDBC driver).
 
-Run these steps:
+After installing the stack, run these steps:
 
 ```
 cd shelfscan
