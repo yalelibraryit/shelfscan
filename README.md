@@ -3,9 +3,11 @@ Shelfscan
 
 # Installation Steps
 
-Clone this repo.
-Clone yalelibrary/accservices
-Clone yalelibrary/accservices-web
+First, clone the three repos (shelfscan, accservices, accservices-web)
+
+1. Clone this repo.
+2. Clone yalelibrary/accservices
+3. Clone yalelibrary/accservices-web
 
 Import all three projects into IntelliJ Idea (or your favorite IDE). Make sure all the standard Java dependecies are installed (JDK, Maven, Microsoft JDBC driver).
 
